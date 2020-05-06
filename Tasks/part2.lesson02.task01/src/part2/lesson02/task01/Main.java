@@ -1,5 +1,12 @@
 package part2.lesson02.task01;
 
+/**
+ * Написать программу ”Hello, World!”. В ходе выполнения программы она должна выбросить исключение и завершиться с ошибкой.
+	1. Смоделировав ошибку «NullPointerException»
+	2. Смоделировав ошибку «ArrayIndexOutOfBoundsException»
+	3. Вызвав свой вариант ошибки через оператор throw
+ */
+
 class A {
     public static String s3;
     public String s4;
