@@ -1,22 +1,21 @@
 package part6.lesson01.task01;
 
-import java.util.Scanner;
+/**
+ * Задание 1. Написать программу, читающую текстовый файл.
+ 1. Программа должна составлять отсортированный по алфавиту список слов,
+    найденных в файле и сохранять его в файл-результат.
+ 2. Найденные слова не должны повторяться, регистр не должен учитываться.
+ 3. Одно слово в разных падежах – это разные слова.
+ */
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
-
-        Scanner scanner = new Scanner(System.in);
-        // TODO: 26.05.2020 считать имя файла из сканера
         TextReader textReader = new TextReader();
-        textReader.read(fileName);
-        // TODO: 26.05.2020 Положить содержимое файла в коллекцию
-        String.split();
-        // TODO: 26.05.2020 Отсортировать
-
-        // TODO: 26.05.2020 Сохранить в новый файл
+        TextWriter textWriter = new TextWriter(textReader.getList());
+        textReader.readFile("Input_text_file.txt");
+        textWriter.writeToFile("Output_text_file.txt");
 
     }
 }
